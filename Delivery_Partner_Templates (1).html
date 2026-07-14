@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Delivery Partner Message Templates</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; }
+.box { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 6px; }
+button { padding: 6px 12px; cursor: pointer; }
+pre { white-space: pre-wrap; }
+</style>
+<script>
+function copyText(id){
+  const text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text);
+  alert("Copied!");
+}
+</script>
+</head>
+<body>
+<h2>Delivery Partner Templates</h2>
+
+<div class="box"><b>No Bag / Basket</b><pre id="t1">No bag/basket is available at the customer's location. Kindly request the customer to place a bag or basket and update the status.</pre><button onclick="copyText('t1')">Copy</button></div>
+
+<div class="box"><b>Gate Locked</b><pre id="t2">Customer gate is locked, and delivery could not be completed. Kindly contact the customer and update us once they respond.</pre><button onclick="copyText('t2')">Copy</button></div>
+
+<div class="box"><b>Address Not Traceable</b><pre id="t3">Unable to locate the customer's address despite multiple attempts, and we tried Street View and maps. The order is marked as undelivered. Kindly update us if the customer responds.</pre><button onclick="copyText('t3')">Copy</button></div>
+
+<div class="box"><b>Road Block</b><pre id="t4">Delivery could not be completed due to a roadblock. We attempted to contact the customer but received no response. Kindly update us if the customer responds.</pre><button onclick="copyText('t4')">Copy</button></div>
+
+<div class="box"><b>Leakage Issue</b><pre id="t5">Leakage was identified during transit. A replacement will be arranged. Kindly inform the customer about the delay. ETA 30-45 minutes.</pre><button onclick="copyText('t5')">Copy</button></div>
+
+<div class="box"><b>Customer Not Reachable</b><pre id="t6">Customer is not reachable despite multiple call attempts. Kindly update us once the customer reaches out.</pre><button onclick="copyText('t6')">Copy</button></div>
+
+<div class="box"><b>Animal Issue (Dog)</b><pre id="t7">Delivery could not be completed due to a dog at the customer's location. Kindly contact the customer and update us once they respond so that delivery can be re-attempted safely.</pre><button onclick="copyText('t7')">Copy</button></div>
+
+</body>
+</html>
